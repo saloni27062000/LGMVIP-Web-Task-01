@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="../LGMVIP-Web-Task-01/script.js"></script>
+
+	<title>To Do List</title>
+</head>
+
+<body>
+    <div class="main">
+	<h1 class="header">My To-do List</h1>
+	<div class="container">
+		<h1>Add Items</h1>
+		<form id="addForm">
+			<div class="row">
+				     <input type="text" onkeyup=
+						"toggleButton(this, 'submit')"
+						class="form-control" id="item">
+				
+				    <input type="submit" class="btn-submit"
+						id="submit" value="Submit" disabled>
+				
+			</div>
+		</form>
+
+		<h1>Tasks</h1>
+
+		<form id="addForm">
+			<ul class="list-group" id="items"></ul>
+		</form>
+	</div>
+    </div>
+</body>
+
+</html>
